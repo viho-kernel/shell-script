@@ -1,4 +1,4 @@
 #!/bin/bash
 
 Date=$(date)
-echo "Current Date and Time: $Date"
+echo "Script started executing at: {$Date}"
