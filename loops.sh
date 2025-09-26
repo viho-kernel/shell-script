@@ -10,4 +10,3 @@ echo "Loop finished"
 }
 
 number >> output.txt
-cat output.txt
