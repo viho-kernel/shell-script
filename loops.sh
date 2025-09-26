@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..5+1}
+for i in {1..5}
 do 
     echo "echo $i"      
 done
