@@ -9,4 +9,5 @@ done
 echo "Loop finished"
 }
 
-number >> output.txt
+number > output.txt
+cat output.txt
