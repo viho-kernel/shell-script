@@ -1,12 +1,12 @@
 #!/bin/bash
 
 id=$(id -u)
-if [ $id -ne 0 ]
+if [ $id -eq 0 ]
 then
-    echo "You must be a root user to run this script"
-    exit 1
-else
     echo "You are a root user"
+else
+    echo "You must be a root user to run this"
+    exit 1
 fi
 yum install mysql -y
 
@@ -26,4 +26,5 @@ then
     exit 1
 else
     echo "Git installed successfully"
+    exit 0
 fi
