@@ -11,11 +11,11 @@ then
   echo -e "$R Error:: This script must be run as root or with sudo.$N"
   exit 1
 else
-    echo "$G You are running this script as root."
+    echo -e "$G You are running this script as root."
 
 fi
 
-echo "$G All arguments passed: $@"
+echo -e "$G All arguments passed: $@"
 
 
 
