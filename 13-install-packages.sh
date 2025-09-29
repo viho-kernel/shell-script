@@ -4,17 +4,18 @@
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
-if [ "$ID" -ne 0 ] 
+if [ $ID -ne 0 ] 
 then    
-  echo "$R Error:: This script must be run as root or with sudo.$N"
+  echo -e "$R Error:: This script must be run as root or with sudo.$N"
   exit 1
 else
-    echo "$G You are running this script as root.$N"
+    echo "$G You are running this script as root."
 
 fi
 
-echo "$G All arguments passed: $@$N"
+echo "$G All arguments passed: $@"
 
 
 
