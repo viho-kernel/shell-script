@@ -25,4 +25,4 @@ do
     echo "home_directory: $home_directory"
     echo "shell: $shell"
     #echo "Creating user: $username with password: $password"
-done <<< $file
+done < $file
