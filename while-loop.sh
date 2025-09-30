@@ -1,6 +1,6 @@
 #!/bin/bash
 
-File=$(/tmp/passwd)
+File="/tmp/passwd"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -24,4 +24,4 @@ do
     echo "home_directory: $home_directory"
     echo "shell: $shell"
     #echo "Creating user: $username with password: $password"
-done < "$File"
+done <<< $File
