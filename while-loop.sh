@@ -15,7 +15,7 @@ else
   echo "File $file found. Proceeding with user creation."
 fi
 
-while IFS= ":" read -r username password user_id group_id user_fullname home_directory shell_path
+while IFS=":" read -r username password user_id group_id user_fullname home_directory shell_path
 do
     echo "username: $username"
     echo "password: $password"
