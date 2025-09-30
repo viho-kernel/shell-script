@@ -19,10 +19,5 @@ while IFS= ":" read -r username password user_id group_id user_fullname home_dir
 do
     echo "username: $username"
     echo "password: $password"
-    echo "user_id: $user_id"
-    echo "group_id: $group_id"
-    echo "full_name: $full_name"
-    echo "home_directory: $home_directory"
-    echo "shell: $shell"
-    #echo "Creating user: $username with password: $password"
+    echo "User Full name: $user_fullname"
 done < $file
