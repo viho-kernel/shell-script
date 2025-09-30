@@ -1,20 +1,21 @@
 #!/bin/bash
 
-File="/tmp/passwd"
+file=/etc/passwd
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -f $File ]
+if [ ! -f $file ]
 then
-  echo "File $File does not exist. Exiting."
+  echo "File $file does not exist. Exiting."
 
 else
-  echo "File $File found. Proceeding with user creation."
+  echo "File $file found. Proceeding with user creation."
 fi
 
-while IFS= ":" read -r username password user_id group_id full_name home_directory shell
+while IFS= ":" read -r username password user_id group_id user_fullname home_directory shell_path
 do
     echo "username: $username"
     echo "password: $password"
@@ -24,4 +25,4 @@ do
     echo "home_directory: $home_directory"
     echo "shell: $shell"
     #echo "Creating user: $username with password: $password"
-done <<< $File
+done <<< $file
