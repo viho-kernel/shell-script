@@ -11,7 +11,7 @@ FILES_TO_DELETE=$(find "$SOURCE_DIR" -type f -name "*.java" -mtime +1)
 
 while IFS= read -r line
 do
-    echo "Deleting the file $line"
+    echo "Deleting the file: $line"
     rm -f "$line"
 done <<<"$FILES_TO_DELETE"
 
