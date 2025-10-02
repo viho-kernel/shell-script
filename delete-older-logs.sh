@@ -7,7 +7,7 @@ if [ ! -d "$SOURCE_DIR" ]; then
   exit 1
 fi
 
-FILES_TO_DELETE=$(find "$SOURCE_DIR" -type f -name "*.java" -mtime +7)
+FILES_TO_DELETE=$(find "$SOURCE_DIR" -type f -name "*.java" -mtime +1)
 
 while IFS= read -r line
 do
